@@ -1,8 +1,8 @@
-  import javax.swing.*;
-  import java.awt.*;
-  import java.awt.event.*;
+    import javax.swing.*;
+    import java.awt.*;
+    import java.awt.event.*;
 
-  public class Main {
+    public class Main {
       private int puncte = 0; // contor pentru răspunsuri corecte
       private int intrebareCurenta = 0; // indicele întrebării curente
 
@@ -94,5 +94,5 @@
         SwingUtilities.invokeLater(() -> {
             new Main().createAndShowGUI();
         });
+        }
     }
-}
