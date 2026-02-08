@@ -1,15 +1,15 @@
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common. action_chains import ActionChains
-import time
-url = " https://www.youtube.com "
-options = Options()
-options.add_argument("--window-size=1920,1080")
-browser = webdriver.Chrome(options=options)
-action = ActionChains(browser)
-try:
+	from selenium import webdriver
+	from selenium.webdriver.common.by import By
+	from selenium.webdriver.common.keys import Keys
+	from selenium.webdriver.chrome.options import Options
+	from selenium.webdriver.common. action_chains import ActionChains
+	import time
+	url = " https://www.youtube.com "
+	options = Options()
+	options.add_argument("--window-size=1920,1080")
+	browser = webdriver.Chrome(options=options)
+	action = ActionChains(browser)
+	try:
     print("Proceed to URL")
     browser.get(url)
     time.sleep(5)
@@ -30,8 +30,8 @@ try:
     first_video.click()
     time. sleep(10)
     print("Video rulează:", video_title)
-except Exception as e:
+	except Exception as e:
     print("Eroare:", e)
-finally:
+	finally:
     time. sleep(10)
     browser.quit()
